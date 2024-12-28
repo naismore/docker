@@ -2,13 +2,13 @@
 FROM node:14
 
 # Устанавливаем рабочую директорию
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app COPY . . RUN npm install
 
 # Копируем package.json и package-lock.json для установки зависимостей
-COPY . .
+
 
 # Устанавливаем зависимости
-RUN npm install
+
 
 # Копируем остальные файлы проекта в рабочую директорию
 COPY . .

@@ -1,5 +1,5 @@
 # Используем официальный образ Node.js в качестве базового
-FROM node:14
+FROM node:latest
 
 # Устанавливаем рабочую директорию
 WORKDIR /usr/src/app  
